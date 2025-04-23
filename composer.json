@@ -25,6 +25,8 @@
         "orchestra/testbench": "^3.8",
         "phpunit/phpunit": "^7.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "angell007\\HablameSms\\": "src"

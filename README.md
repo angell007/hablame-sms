@@ -20,7 +20,7 @@ Este paquete facilita la conexión con la API de [Háblame SMS](https://www.habl
 Puedes instalar el paquete a través de composer:
 
 ```bash
-composer require andreshg112/hablame-sms
+composer require angell007/hablame-sms
 ```
 
 ## Uso
