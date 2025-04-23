@@ -68,6 +68,7 @@ return [
     'hablame_sms' => [
         'api' => env('HABLAME_API', ''),
         'cliente' => env('HABLAME_CLIENTE', ''),
+        'token' => env('HABLAME_TOKEN', ''),
 
         /**
          * Si deseas agregar tu propio cliente de Guzzle, en vez de usar uno por defecto,

@@ -1,18 +1,17 @@
 {
-    "name": "andreshg112/hablame-sms",
+    "name": "angell007/hablame-sms",
     "description": "Cliente para comunicarse con la API para SMS de Háblame Colombia.",
     "keywords": [
-        "andreshg112",
+        "angell007",
         "hablame-sms"
     ],
-    "homepage": "https://github.com/andreshg112/hablame-sms",
+    "homepage": "https://github.com/angell007/hablame-sms",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Andrés Herrera García",
-            "email": "andreshg112@gmail.com",
-            "role": "Developer"
+            "name": "angell007",
+            "role": "Maintainer"
         }
     ],
     "require": {
@@ -28,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Andreshg112\\HablameSms\\": "src"
+            "angell007\\HablameSms\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Andreshg112\\HablameSms\\Tests\\": "tests"
+            "angell007\\HablameSms\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Andreshg112\\HablameSms\\HablameSmsServiceProvider"
+                "angell007\\HablameSms\\HablameSmsServiceProvider"
             ],
             "aliases": {
-                "HablameSms": "Andreshg112\\HablameSms\\Facade"
+                "HablameSms": "angell007\\HablameSms\\Facade"
             }
         }
     }
