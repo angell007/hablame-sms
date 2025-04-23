@@ -1,12 +1,12 @@
 <?php
 
-namespace Andreshg112\HablameSms\Tests;
+namespace Angell007\HablameSms\Tests;
 
-use Andreshg112\HablameSms\Exceptions\CouldNotSendNotification;
-use Andreshg112\HablameSms\Facade;
-use Andreshg112\HablameSms\HablameChannel;
-use Andreshg112\HablameSms\HablameMessage;
-use Andreshg112\HablameSms\HablameSmsServiceProvider;
+use Angell007\HablameSms\Exceptions\CouldNotSendNotification;
+use Angell007\HablameSms\Facade;
+use Angell007\HablameSms\HablameChannel;
+use Angell007\HablameSms\HablameMessage;
+use Angell007\HablameSms\HablameSmsServiceProvider;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Config;
@@ -14,10 +14,10 @@ use Orchestra\Testbench\TestCase;
 
 class ChannelTest extends TestCase
 {
-    /** @var \Andreshg112\HablameSms\Facade|\Andreshg112\HablameSms\Client */
+    /** @var \Angell007\HablameSms\Facade|\Angell007\HablameSms\Client */
     protected $hablame = null;
 
-    /** @var \Andreshg112\HablameSms\HablameChannel */
+    /** @var \Angell007\HablameSms\HablameChannel */
     protected $channel = null;
 
     /** @var TestNotification */
@@ -72,7 +72,7 @@ class ChannelTest extends TestCase
             ],
         ];
 
-        /** @var \Andreshg112\HablameSms\HablameMessage $message */
+        /** @var \Angell007\HablameSms\HablameMessage $message */
         $message = $this->notification->toHablameNotification($this->notifiable);
 
         $data = $message->toArray();
@@ -130,7 +130,7 @@ class ChannelTest extends TestCase
             ],
         ];
 
-        /** @var \Andreshg112\HablameSms\HablameMessage $message */
+        /** @var \Angell007\HablameSms\HablameMessage $message */
         $message = $this->notification->toHablameNotification($this->notifiable);
 
         $data = $message->toArray();
@@ -167,7 +167,7 @@ class ChannelTest extends TestCase
             'sms' => null,
         ];
 
-        /** @var \Andreshg112\HablameSms\HablameMessage $message */
+        /** @var \Angell007\HablameSms\HablameMessage $message */
         $message = $this->notification->toHablameNotification($this->notifiable);
 
         $data = $message->toArray();
@@ -223,7 +223,7 @@ class ChannelTest extends TestCase
             ],
         ];
 
-        /** @var \Andreshg112\HablameSms\HablameMessage $message */
+        /** @var \Angell007\HablameSms\HablameMessage $message */
         $message = $this->notification->toHablameNotification($this->notifiable);
 
         $data = $message->toArray();

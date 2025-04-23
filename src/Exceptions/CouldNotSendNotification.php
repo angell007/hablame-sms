@@ -1,6 +1,6 @@
 <?php
 
-namespace Andreshg112\HablameSms\Exceptions;
+namespace Angell007\HablameSms\Exceptions;
 
 use function GuzzleHttp\json_encode;
 

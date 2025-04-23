@@ -1,8 +1,8 @@
 <?php
 
-namespace Andreshg112\HablameSms\Tests;
+namespace Angell007\HablameSms\Tests;
 
-use Andreshg112\HablameSms\HablameMessage;
+use Angell007\HablameSms\HablameMessage;
 use Illuminate\Foundation\Testing\WithFaker;
 use Orchestra\Testbench\TestCase;
 

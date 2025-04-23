@@ -1,8 +1,8 @@
 <?php
 
-namespace Andreshg112\HablameSms;
+namespace Angell007\HablameSms;
 
-use Andreshg112\HablameSms\Exceptions\CouldNotSendNotification;
+use Angell007\HablameSms\Exceptions\CouldNotSendNotification;
 
 class HablameChannel
 {
@@ -10,13 +10,13 @@ class HablameChannel
      * Send the given notification.
      *
      * @param  \Illuminate\Notifications\Notifiable  $notifiable
-     * @throws \Andreshg112\HablameSms\Exceptions\CouldNotSendNotification
+     * @throws \Angell007\HablameSms\Exceptions\CouldNotSendNotification
      */
     public function send($notifiable, HablameNotification $notification)
     {
         $message = $notification->toHablameNotification($notifiable);
 
-        /** @var \Andreshg112\HablameSms\HablameMessage $message */
+        /** @var \Angell007\HablameSms\HablameMessage $message */
         $messageArray = $message->toArray();
 
         try {

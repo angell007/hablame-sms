@@ -1,8 +1,8 @@
 <?php
 
-namespace Andreshg112\HablameSms\Tests;
+namespace Angell007\HablameSms\Tests;
 
-use Andreshg112\HablameSms\Client;
+use Angell007\HablameSms\Client;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;

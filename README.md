@@ -1,12 +1,12 @@
 # Cliente de Háblame SMS (Colombia) para PHP (Optimizado para Laravel)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/andreshg112/hablame-sms.svg?style=flat-square)](https://packagist.org/packages/andreshg112/hablame-sms)
-[![Build Status](https://travis-ci.com/andreshg112/hablame-sms.svg?branch=master)](https://travis-ci.com/andreshg112/hablame-sms)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Angell007/hablame-sms.svg?style=flat-square)](https://packagist.org/packages/Angell007/hablame-sms)
+[![Build Status](https://travis-ci.com/Angell007/hablame-sms.svg?branch=master)](https://travis-ci.com/Angell007/hablame-sms)
 [![StyleCI](https://github.styleci.io/repos/181806042/shield?branch=master)](https://github.styleci.io/repos/181806042)
-[![Quality Score](https://img.shields.io/scrutinizer/g/andreshg112/hablame-sms.svg?style=flat-square)](https://scrutinizer-ci.com/g/andreshg112/hablame-sms)
-[![Code Coverage](https://scrutinizer-ci.com/g/andreshg112/hablame-sms/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/andreshg112/hablame-sms/?branch=master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/0e7fe998a23bf36ec963/maintainability)](https://codeclimate.com/github/andreshg112/hablame-sms/maintainability)
-[![Total Downloads](https://img.shields.io/packagist/dt/andreshg112/hablame-sms.svg?style=flat-square)](https://packagist.org/packages/andreshg112/hablame-sms)
+[![Quality Score](https://img.shields.io/scrutinizer/g/Angell007/hablame-sms.svg?style=flat-square)](https://scrutinizer-ci.com/g/Angell007/hablame-sms)
+[![Code Coverage](https://scrutinizer-ci.com/g/Angell007/hablame-sms/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Angell007/hablame-sms/?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0e7fe998a23bf36ec963/maintainability)](https://codeclimate.com/github/Angell007/hablame-sms/maintainability)
+[![Total Downloads](https://img.shields.io/packagist/dt/Angell007/hablame-sms.svg?style=flat-square)](https://packagist.org/packages/Angell007/hablame-sms)
 
 Este paquete facilita la conexión con la API de [Háblame SMS](https://www.hablame.co) para enviar mensajes de texto y consultar el saldo. Además, permite el envío de notificaciones a través de SMS usando el [sistema de notificaciones de Laravel](https://laravel.com/docs/5.5/notifications).
 
@@ -34,7 +34,7 @@ composer require angell007/hablame-sms
  * $guzzle: [opcional] Sirve para pasar un cliente de Guzzle (\GuzzleHttp\Client) configurado,
  * por ejemplo, en pruebas unitarias.
  */
-$hablame = new \Andreshg112\HablameSms\Client($client, $api, $guzzle);
+$hablame = new \Angell007\HablameSms\Client($client, $api, $guzzle);
 
 /**
  * Consultar saldo.
@@ -86,9 +86,9 @@ return [
 Ahora puedes hacer:
 
 ```php
-$response = \Andreshg112\HablameSms\Facade::checkBalance();
+$response = \Angell007\HablameSms\Facade::checkBalance();
 
-$response = \Andreshg112\HablameSms\Facade::sendMessage($phoneNumbers, $sms, $datetime, $reference);
+$response = \Angell007\HablameSms\Facade::sendMessage($phoneNumbers, $sms, $datetime, $reference);
 
 // o
 
@@ -97,7 +97,7 @@ $response = \Hablame::checkBalance();
 $response = \Hablame::sendMessage($phoneNumbers, $sms, $datetime, $reference);
 ```
 
-> Si usas Laravel < 5.5, debes agregar `\Andreshg112\HablameSms\HablameSmsServiceProvider::class` al arreglo de `providers` en `config/app.php`.
+> Si usas Laravel < 5.5, debes agregar `\Angell007\HablameSms\HablameSmsServiceProvider::class` al arreglo de `providers` en `config/app.php`.
 
 #### Notificaciones
 
@@ -106,7 +106,7 @@ Puedes enviar notificaciones usando el [sistema integrado en Laravel](https://la
 En tu notificación, añade `HablameChannel::class` al array que retorna la función `via()`:
 
 ```php
-use Andreshg112\HablameSms\HablameChannel;
+use Angell007\HablameSms\HablameChannel;
 
 public function via($notifiable)
 {
@@ -117,7 +117,7 @@ public function via($notifiable)
 Luego, crea un método llamado `toHablameNotification()` en tu clase:
 
 ```php
-use Andreshg112\HablameSms\HablameMessage;
+use Angell007\HablameSms\HablameMessage;
 
 public function toHablameNotification($notifiable)
 {
@@ -149,11 +149,11 @@ Por favor mira las [guías de contribución](CONTRIBUTING.md) (en inglés) para 
 
 ### Seguridad
 
-Si descubres alguna vulnerabilidad, por favor escríbeme a andreshg112@gmail.com en vez de usar el [seguimiento de indicendias](../../issues) de GitHub.
+Si descubres alguna vulnerabilidad, por favor escríbeme a Angell007@gmail.com en vez de usar el [seguimiento de indicendias](../../issues) de GitHub.
 
 ## Créditos
 
--   [Andrés Herrera García](https://github.com/andreshg112)
+-   [Andrés Herrera García](https://github.com/Angell007)
 -   [Todos los colaboradores](../../contributors)
 
 ## Licencia

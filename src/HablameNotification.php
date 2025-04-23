@@ -1,6 +1,6 @@
 <?php
 
-namespace Andreshg112\HablameSms;
+namespace Angell007\HablameSms;
 
 use Illuminate\Notifications\Notification;
 

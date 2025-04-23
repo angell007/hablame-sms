@@ -1,9 +1,9 @@
 <?php
 
-namespace Andreshg112\HablameSms\Tests;
+namespace Angell007\HablameSms\Tests;
 
-use Andreshg112\HablameSms\Facade;
-use Andreshg112\HablameSms\HablameSmsServiceProvider;
+use Angell007\HablameSms\Facade;
+use Angell007\HablameSms\HablameSmsServiceProvider;
 use Illuminate\Support\Facades\Config;
 use Orchestra\Testbench\TestCase;
 
